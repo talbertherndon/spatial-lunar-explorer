@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480434462B84629C004D8A6A /* DragRotationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480434452B84629C004D8A6A /* DragRotationModifier.swift */; };
+		480434482B84643C004D8A6A /* PlacementGesturesModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480434472B84643B004D8A6A /* PlacementGesturesModifier.swift */; };
+		4804344B2B8477FF004D8A6A /* RotationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4804344A2B8477FF004D8A6A /* RotationSystem.swift */; };
+		481FDB6A2B87DC7A006B5F3A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FDB692B87DC7A006B5F3A /* ViewModel.swift */; };
+		481FDB6C2B87DCDC006B5F3A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FDB6B2B87DCDC006B5F3A /* Models.swift */; };
+		481FDB6E2B87F763006B5F3A /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481FDB6D2B87F763006B5F3A /* Moon.swift */; };
+		4823666D2B85371A00ACE33B /* DocumentsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823666C2B85371A00ACE33B /* DocumentsWindow.swift */; };
+		482CB9322B89E25B00C9D4CF /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482CB9312B89E25B00C9D4CF /* ListItemView.swift */; };
+		482CB9342B8AB09700C9D4CF /* MoonControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482CB9332B8AB09700C9D4CF /* MoonControls.swift */; };
+		4865286C2B8AE48B0012DD2C /* ElevatedMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4865286B2B8AE48B0012DD2C /* ElevatedMoon.swift */; };
+		489088A02B83DACF0001DBE2 /* Artemis Accords.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4890889F2B83DACF0001DBE2 /* Artemis Accords.pdf */; };
+		489088A22B83DB1C0001DBE2 /* Recommended Framework and Key Elements for Peaceful and Sustainable Lunar Activities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 489088A12B83DB1C0001DBE2 /* Recommended Framework and Key Elements for Peaceful and Sustainable Lunar Activities.pdf */; };
+		489088A42B83EB780001DBE2 /* Moon Treaty.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 489088A32B83EB780001DBE2 /* Moon Treaty.pdf */; };
+		48AA65A32B889118006C6718 /* Crater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AA65A22B889118006C6718 /* Crater.swift */; };
+		48B9F1372B89BD0700920EEE /* MissionMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9F1362B89BD0600920EEE /* MissionMoon.swift */; };
+		48C020662B833A2000129830 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 48C020652B833A2000129830 /* RealityKitContent */; };
+		48C020682B833A2000129830 /* PSPDFKit_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C020672B833A2000129830 /* PSPDFKit_DemoApp.swift */; };
+		48C0206E2B833A2000129830 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 48C0206D2B833A2000129830 /* ImageBasedLighting.skybox */; };
+		48C020702B833A2100129830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C0206F2B833A2100129830 /* Assets.xcassets */; };
+		48C020732B833A2100129830 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C020722B833A2100129830 /* Preview Assets.xcassets */; };
+		48C0207E2B833A2200129830 /* PSPDFKit_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C0207D2B833A2200129830 /* PSPDFKit_DemoTests.swift */; };
+		48C020892B833BE000129830 /* PSPDFKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48C020882B833BE000129830 /* PSPDFKit */; };
+		48CB786C2B8B12A700D7CA7D /* MineralMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB786B2B8B12A700D7CA7D /* MineralMoon.swift */; };
+		48CB786E2B8BCB5D00D7CA7D /* CraterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB786D2B8BCB5D00D7CA7D /* CraterDetails.swift */; };
+		48CB788C2B8BEDF900D7CA7D /* Remote Sensing Principles.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB786F2B8BEDF400D7CA7D /* Remote Sensing Principles.pdf */; };
+		48CB788D2B8BEDF900D7CA7D /* Vancouver Recommendations on Space Mining.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78702B8BEDF400D7CA7D /* Vancouver Recommendations on Space Mining.pdf */; };
+		48CB78902B8BEDF900D7CA7D /* Outer Space Treaty.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78732B8BEDF500D7CA7D /* Outer Space Treaty.pdf */; };
+		48CB78912B8BEDF900D7CA7D /* The Declaration of Legal Principles Governing the Activities of States in the Exploration and Uses of Outer Space.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78742B8BEDF500D7CA7D /* The Declaration of Legal Principles Governing the Activities of States in the Exploration and Uses of Outer Space.pdf */; };
+		48CB78922B8BEDF900D7CA7D /* Working Group on Legal Aspects of Space Resource Activities - Status Overview.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78752B8BEDF600D7CA7D /* Working Group on Legal Aspects of Space Resource Activities - Status Overview.pdf */; };
+		48CB78932B8BEDF900D7CA7D /* Space Debris Mitigation Guidelines of the Committee on the Peaceful Uses of Outer Space.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78762B8BEDF600D7CA7D /* Space Debris Mitigation Guidelines of the Committee on the Peaceful Uses of Outer Space.pdf */; };
+		48CB78942B8BEDF900D7CA7D /* Regulatory Framework on Space Activities of the United Arab Emirates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78772B8BEDF600D7CA7D /* Regulatory Framework on Space Activities of the United Arab Emirates.pdf */; };
+		48CB78972B8BEDF900D7CA7D /* Japanese Information to the Space Resources Working Group.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB787A2B8BEDF600D7CA7D /* Japanese Information to the Space Resources Working Group.pdf */; };
+		48CB78982B8BEDF900D7CA7D /* Best Practices for Sustainable Lunar Activities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB787B2B8BEDF600D7CA7D /* Best Practices for Sustainable Lunar Activities.pdf */; };
+		48CB78992B8BEDF900D7CA7D /* Registration Convention.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB787C2B8BEDF600D7CA7D /* Registration Convention.pdf */; };
+		48CB789A2B8BEDF900D7CA7D /* Building Blocks Outer Space.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB787D2B8BEDF600D7CA7D /* Building Blocks Outer Space.pdf */; };
+		48CB789C2B8BEDF900D7CA7D /* Moon Agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB787F2B8BEDF700D7CA7D /* Moon Agreement.pdf */; };
+		48CB789F2B8BEDF900D7CA7D /* Rescue Agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78822B8BEDF700D7CA7D /* Rescue Agreement.pdf */; };
+		48CB78A02B8BEDF900D7CA7D /* U.S. Commercial Space Launch Competitiveness Act.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78832B8BEDF700D7CA7D /* U.S. Commercial Space Launch Competitiveness Act.pdf */; };
+		48CB78A12B8BEDF900D7CA7D /* Space Liability Convention.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78842B8BEDF700D7CA7D /* Space Liability Convention.pdf */; };
+		48CB78A32B8BEDF900D7CA7D /* Safety Framework for Nuclear Power Source Applications in Outer Space.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78862B8BEDF800D7CA7D /* Safety Framework for Nuclear Power Source Applications in Outer Space.pdf */; };
+		48CB78A82B8BEDF900D7CA7D /* Principles Governing the Use by States of Artificial Earth Satellites for International Direct Television Broadcasting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB788B2B8BEDF800D7CA7D /* Principles Governing the Use by States of Artificial Earth Satellites for International Direct Television Broadcasting.pdf */; };
+		48CB78AA2B8BF58400D7CA7D /* Application.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78A92B8BF58300D7CA7D /* Application.pdf */; };
+		48CB78AC2B8BF59000D7CA7D /* Federal Space.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78AB2B8BF59000D7CA7D /* Federal Space.pdf */; };
+		48CB78AE2B8BF5D800D7CA7D /* Recommendations for organizations in registering space objects.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78AD2B8BF5D800D7CA7D /* Recommendations for organizations in registering space objects.pdf */; };
+		48CB78B02B8BF69D00D7CA7D /* Declaration on International Cooperation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78AF2B8BF69D00D7CA7D /* Declaration on International Cooperation.pdf */; };
+		48CB78B22B8BF6AB00D7CA7D /* Guidelines for space activities.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78B12B8BF6AB00D7CA7D /* Guidelines for space activities.pdf */; };
+		48CB78B42B8BF6B500D7CA7D /* Law Luxembourg Space Agency.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78B32B8BF6B400D7CA7D /* Law Luxembourg Space Agency.pdf */; };
+		48CB78B62B8BF7D700D7CA7D /* Recommendations on national legislation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78B52B8BF7D700D7CA7D /* Recommendations on national legislation.pdf */; };
+		48CB78B82B8BF88900D7CA7D /* Principles Relevant to the Use of Nuclear Power Sources In Outer Space.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78B72B8BF88900D7CA7D /* Principles Relevant to the Use of Nuclear Power Sources In Outer Space.pdf */; };
+		48CB78BA2B8BF93500D7CA7D /* International co-operation in the peaceful uses of outer space.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 48CB78B92B8BF93500D7CA7D /* International co-operation in the peaceful uses of outer space.pdf */; };
+		48CB78BC2B8BFD7500D7CA7D /* MissionDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB78BB2B8BFD7500D7CA7D /* MissionDetails.swift */; };
+		48EF92412B88847B00ED7C1D /* MoonExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EF92402B88847B00ED7C1D /* MoonExplorer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48C0207A2B833A2200129830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48C020582B833A1F00129830 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C0205F2B833A2000129830;
+			remoteInfo = "PSPDFKit-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		480434452B84629C004D8A6A /* DragRotationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragRotationModifier.swift; sourceTree = "<group>"; };
+		480434472B84643B004D8A6A /* PlacementGesturesModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementGesturesModifier.swift; sourceTree = "<group>"; };
+		4804344A2B8477FF004D8A6A /* RotationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationSystem.swift; sourceTree = "<group>"; };
+		481FDB692B87DC7A006B5F3A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		481FDB6B2B87DCDC006B5F3A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		481FDB6D2B87F763006B5F3A /* Moon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
+		4823666C2B85371A00ACE33B /* DocumentsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsWindow.swift; sourceTree = "<group>"; };
+		482CB9312B89E25B00C9D4CF /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		482CB9332B8AB09700C9D4CF /* MoonControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonControls.swift; sourceTree = "<group>"; };
+		4865286B2B8AE48B0012DD2C /* ElevatedMoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevatedMoon.swift; sourceTree = "<group>"; };
+		4890889F2B83DACF0001DBE2 /* Artemis Accords.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Artemis Accords.pdf"; sourceTree = "<group>"; };
+		489088A12B83DB1C0001DBE2 /* Recommended Framework and Key Elements for Peaceful and Sustainable Lunar Activities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Recommended Framework and Key Elements for Peaceful and Sustainable Lunar Activities.pdf"; sourceTree = "<group>"; };
+		489088A32B83EB780001DBE2 /* Moon Treaty.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Moon Treaty.pdf"; sourceTree = "<group>"; };
+		48AA65A22B889118006C6718 /* Crater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crater.swift; sourceTree = "<group>"; };
+		48B9F1362B89BD0600920EEE /* MissionMoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionMoon.swift; sourceTree = "<group>"; };
+		48C020602B833A2000129830 /* PSPDFKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PSPDFKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C020642B833A2000129830 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		48C020672B833A2000129830 /* PSPDFKit_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPDFKit_DemoApp.swift; sourceTree = "<group>"; };
+		48C0206D2B833A2000129830 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
+		48C0206F2B833A2100129830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48C020722B833A2100129830 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48C020742B833A2100129830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C020792B833A2200129830 /* PSPDFKit-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PSPDFKit-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48C0207D2B833A2200129830 /* PSPDFKit_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPDFKit_DemoTests.swift; sourceTree = "<group>"; };
+		48CB786B2B8B12A700D7CA7D /* MineralMoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineralMoon.swift; sourceTree = "<group>"; };
+		48CB786D2B8BCB5D00D7CA7D /* CraterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraterDetails.swift; sourceTree = "<group>"; };
+		48CB786F2B8BEDF400D7CA7D /* Remote Sensing Principles.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Remote Sensing Principles.pdf"; sourceTree = "<group>"; };
+		48CB78702B8BEDF400D7CA7D /* Vancouver Recommendations on Space Mining.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Vancouver Recommendations on Space Mining.pdf"; sourceTree = "<group>"; };
+		48CB78732B8BEDF500D7CA7D /* Outer Space Treaty.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Outer Space Treaty.pdf"; sourceTree = "<group>"; };
+		48CB78742B8BEDF500D7CA7D /* The Declaration of Legal Principles Governing the Activities of States in the Exploration and Uses of Outer Space.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The Declaration of Legal Principles Governing the Activities of States in the Exploration and Uses of Outer Space.pdf"; sourceTree = "<group>"; };
+		48CB78752B8BEDF600D7CA7D /* Working Group on Legal Aspects of Space Resource Activities - Status Overview.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Working Group on Legal Aspects of Space Resource Activities - Status Overview.pdf"; sourceTree = "<group>"; };
+		48CB78762B8BEDF600D7CA7D /* Space Debris Mitigation Guidelines of the Committee on the Peaceful Uses of Outer Space.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Space Debris Mitigation Guidelines of the Committee on the Peaceful Uses of Outer Space.pdf"; sourceTree = "<group>"; };
+		48CB78772B8BEDF600D7CA7D /* Regulatory Framework on Space Activities of the United Arab Emirates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Regulatory Framework on Space Activities of the United Arab Emirates.pdf"; sourceTree = "<group>"; };
+		48CB787A2B8BEDF600D7CA7D /* Japanese Information to the Space Resources Working Group.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Japanese Information to the Space Resources Working Group.pdf"; sourceTree = "<group>"; };
+		48CB787B2B8BEDF600D7CA7D /* Best Practices for Sustainable Lunar Activities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Best Practices for Sustainable Lunar Activities.pdf"; sourceTree = "<group>"; };
+		48CB787C2B8BEDF600D7CA7D /* Registration Convention.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Registration Convention.pdf"; sourceTree = "<group>"; };
+		48CB787D2B8BEDF600D7CA7D /* Building Blocks Outer Space.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Building Blocks Outer Space.pdf"; sourceTree = "<group>"; };
+		48CB787F2B8BEDF700D7CA7D /* Moon Agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Moon Agreement.pdf"; sourceTree = "<group>"; };
+		48CB78822B8BEDF700D7CA7D /* Rescue Agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Rescue Agreement.pdf"; sourceTree = "<group>"; };
+		48CB78832B8BEDF700D7CA7D /* U.S. Commercial Space Launch Competitiveness Act.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "U.S. Commercial Space Launch Competitiveness Act.pdf"; sourceTree = "<group>"; };
+		48CB78842B8BEDF700D7CA7D /* Space Liability Convention.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Space Liability Convention.pdf"; sourceTree = "<group>"; };
+		48CB78862B8BEDF800D7CA7D /* Safety Framework for Nuclear Power Source Applications in Outer Space.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Safety Framework for Nuclear Power Source Applications in Outer Space.pdf"; sourceTree = "<group>"; };
+		48CB788B2B8BEDF800D7CA7D /* Principles Governing the Use by States of Artificial Earth Satellites for International Direct Television Broadcasting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Principles Governing the Use by States of Artificial Earth Satellites for International Direct Television Broadcasting.pdf"; sourceTree = "<group>"; };
+		48CB78A92B8BF58300D7CA7D /* Application.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Application.pdf; sourceTree = "<group>"; };
+		48CB78AB2B8BF59000D7CA7D /* Federal Space.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Federal Space.pdf"; sourceTree = "<group>"; };
+		48CB78AD2B8BF5D800D7CA7D /* Recommendations for organizations in registering space objects.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Recommendations for organizations in registering space objects.pdf"; sourceTree = "<group>"; };
+		48CB78AF2B8BF69D00D7CA7D /* Declaration on International Cooperation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Declaration on International Cooperation.pdf"; sourceTree = "<group>"; };
+		48CB78B12B8BF6AB00D7CA7D /* Guidelines for space activities.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Guidelines for space activities.pdf"; sourceTree = "<group>"; };
+		48CB78B32B8BF6B400D7CA7D /* Law Luxembourg Space Agency.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Law Luxembourg Space Agency.pdf"; sourceTree = "<group>"; };
+		48CB78B52B8BF7D700D7CA7D /* Recommendations on national legislation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Recommendations on national legislation.pdf"; sourceTree = "<group>"; };
+		48CB78B72B8BF88900D7CA7D /* Principles Relevant to the Use of Nuclear Power Sources In Outer Space.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Principles Relevant to the Use of Nuclear Power Sources In Outer Space.pdf"; sourceTree = "<group>"; };
+		48CB78B92B8BF93500D7CA7D /* International co-operation in the peaceful uses of outer space.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "International co-operation in the peaceful uses of outer space.pdf"; sourceTree = "<group>"; };
+		48CB78BB2B8BFD7500D7CA7D /* MissionDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionDetails.swift; sourceTree = "<group>"; };
+		48EF92402B88847B00ED7C1D /* MoonExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonExplorer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48C0205D2B833A2000129830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C020662B833A2000129830 /* RealityKitContent in Frameworks */,
+				48C020892B833BE000129830 /* PSPDFKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C020762B833A2200129830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		480434442B8461DD004D8A6A /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				480434452B84629C004D8A6A /* DragRotationModifier.swift */,
+				480434472B84643B004D8A6A /* PlacementGesturesModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		480434492B8477DC004D8A6A /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				4804344A2B8477FF004D8A6A /* RotationSystem.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
+		4823666E2B8551DA00ACE33B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				481FDB6D2B87F763006B5F3A /* Moon.swift */,
+				48AA65A22B889118006C6718 /* Crater.swift */,
+				48B9F1362B89BD0600920EEE /* MissionMoon.swift */,
+				4865286B2B8AE48B0012DD2C /* ElevatedMoon.swift */,
+				48CB786B2B8B12A700D7CA7D /* MineralMoon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		482CB92D2B89DED900C9D4CF /* Attachments */ = {
+			isa = PBXGroup;
+			children = (
+				482CB9332B8AB09700C9D4CF /* MoonControls.swift */,
+				48CB786D2B8BCB5D00D7CA7D /* CraterDetails.swift */,
+				48CB78BB2B8BFD7500D7CA7D /* MissionDetails.swift */,
+			);
+			path = Attachments;
+			sourceTree = "<group>";
+		};
+		482CB92E2B89DF7B00C9D4CF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				481FDB692B87DC7A006B5F3A /* ViewModel.swift */,
+				481FDB6B2B87DCDC006B5F3A /* Models.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		482CB9302B89E23200C9D4CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				482CB9312B89E25B00C9D4CF /* ListItemView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4890889C2B83D3610001DBE2 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				48CB78B92B8BF93500D7CA7D /* International co-operation in the peaceful uses of outer space.pdf */,
+				48CB78B72B8BF88900D7CA7D /* Principles Relevant to the Use of Nuclear Power Sources In Outer Space.pdf */,
+				48CB78B12B8BF6AB00D7CA7D /* Guidelines for space activities.pdf */,
+				48CB78AF2B8BF69D00D7CA7D /* Declaration on International Cooperation.pdf */,
+				48CB78AD2B8BF5D800D7CA7D /* Recommendations for organizations in registering space objects.pdf */,
+				48CB78A92B8BF58300D7CA7D /* Application.pdf */,
+				48CB78AB2B8BF59000D7CA7D /* Federal Space.pdf */,
+				48CB787B2B8BEDF600D7CA7D /* Best Practices for Sustainable Lunar Activities.pdf */,
+				48CB78B32B8BF6B400D7CA7D /* Law Luxembourg Space Agency.pdf */,
+				48CB787D2B8BEDF600D7CA7D /* Building Blocks Outer Space.pdf */,
+				48CB787A2B8BEDF600D7CA7D /* Japanese Information to the Space Resources Working Group.pdf */,
+				48CB78B52B8BF7D700D7CA7D /* Recommendations on national legislation.pdf */,
+				48CB787F2B8BEDF700D7CA7D /* Moon Agreement.pdf */,
+				489088A32B83EB780001DBE2 /* Moon Treaty.pdf */,
+				489088A12B83DB1C0001DBE2 /* Recommended Framework and Key Elements for Peaceful and Sustainable Lunar Activities.pdf */,
+				48CB78732B8BEDF500D7CA7D /* Outer Space Treaty.pdf */,
+				48CB788B2B8BEDF800D7CA7D /* Principles Governing the Use by States of Artificial Earth Satellites for International Direct Television Broadcasting.pdf */,
+				48CB787C2B8BEDF600D7CA7D /* Registration Convention.pdf */,
+				48CB78772B8BEDF600D7CA7D /* Regulatory Framework on Space Activities of the United Arab Emirates.pdf */,
+				48CB786F2B8BEDF400D7CA7D /* Remote Sensing Principles.pdf */,
+				48CB78822B8BEDF700D7CA7D /* Rescue Agreement.pdf */,
+				48CB78862B8BEDF800D7CA7D /* Safety Framework for Nuclear Power Source Applications in Outer Space.pdf */,
+				48CB78762B8BEDF600D7CA7D /* Space Debris Mitigation Guidelines of the Committee on the Peaceful Uses of Outer Space.pdf */,
+				48CB78842B8BEDF700D7CA7D /* Space Liability Convention.pdf */,
+				48CB78742B8BEDF500D7CA7D /* The Declaration of Legal Principles Governing the Activities of States in the Exploration and Uses of Outer Space.pdf */,
+				48CB78832B8BEDF700D7CA7D /* U.S. Commercial Space Launch Competitiveness Act.pdf */,
+				48CB78702B8BEDF400D7CA7D /* Vancouver Recommendations on Space Mining.pdf */,
+				48CB78752B8BEDF600D7CA7D /* Working Group on Legal Aspects of Space Resource Activities - Status Overview.pdf */,
+				4890889F2B83DACF0001DBE2 /* Artemis Accords.pdf */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		48C020572B833A1F00129830 = {
+			isa = PBXGroup;
+			children = (
+				4890889C2B83D3610001DBE2 /* Documents */,
+				48C020622B833A2000129830 /* PSPDFKit-Demo */,
+				48C020632B833A2000129830 /* Packages */,
+				48C0207C2B833A2200129830 /* PSPDFKit-DemoTests */,
+				48C020612B833A2000129830 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48C020612B833A2000129830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48C020602B833A2000129830 /* PSPDFKit-Demo.app */,
+				48C020792B833A2200129830 /* PSPDFKit-DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48C020622B833A2000129830 /* PSPDFKit-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				482CB9302B89E23200C9D4CF /* Components */,
+				48EF92362B887B0200ED7C1D /* Windows */,
+				482CB92E2B89DF7B00C9D4CF /* Data */,
+				482CB92D2B89DED900C9D4CF /* Attachments */,
+				4823666E2B8551DA00ACE33B /* Model */,
+				480434492B8477DC004D8A6A /* Systems */,
+				480434442B8461DD004D8A6A /* Modifiers */,
+				48C020672B833A2000129830 /* PSPDFKit_DemoApp.swift */,
+				48C0206D2B833A2000129830 /* ImageBasedLighting.skybox */,
+				48C0206F2B833A2100129830 /* Assets.xcassets */,
+				48C020742B833A2100129830 /* Info.plist */,
+				48C020712B833A2100129830 /* Preview Content */,
+			);
+			path = "PSPDFKit-Demo";
+			sourceTree = "<group>";
+		};
+		48C020632B833A2000129830 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				48C020642B833A2000129830 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		48C020712B833A2100129830 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				48C020722B833A2100129830 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48C0207C2B833A2200129830 /* PSPDFKit-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				48C0207D2B833A2200129830 /* PSPDFKit_DemoTests.swift */,
+			);
+			path = "PSPDFKit-DemoTests";
+			sourceTree = "<group>";
+		};
+		48EF92362B887B0200ED7C1D /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				4823666C2B85371A00ACE33B /* DocumentsWindow.swift */,
+				48EF92402B88847B00ED7C1D /* MoonExplorer.swift */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48C0205F2B833A2000129830 /* PSPDFKit-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C020812B833A2200129830 /* Build configuration list for PBXNativeTarget "PSPDFKit-Demo" */;
+			buildPhases = (
+				48C0205C2B833A2000129830 /* Sources */,
+				48C0205D2B833A2000129830 /* Frameworks */,
+				48C0205E2B833A2000129830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PSPDFKit-Demo";
+			packageProductDependencies = (
+				48C020652B833A2000129830 /* RealityKitContent */,
+				48C020882B833BE000129830 /* PSPDFKit */,
+			);
+			productName = "PSPDFKit-Demo";
+			productReference = 48C020602B833A2000129830 /* PSPDFKit-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48C020782B833A2200129830 /* PSPDFKit-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C020842B833A2200129830 /* Build configuration list for PBXNativeTarget "PSPDFKit-DemoTests" */;
+			buildPhases = (
+				48C020752B833A2200129830 /* Sources */,
+				48C020762B833A2200129830 /* Frameworks */,
+				48C020772B833A2200129830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48C0207B2B833A2200129830 /* PBXTargetDependency */,
+			);
+			name = "PSPDFKit-DemoTests";
+			productName = "PSPDFKit-DemoTests";
+			productReference = 48C020792B833A2200129830 /* PSPDFKit-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48C020582B833A1F00129830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					48C0205F2B833A2000129830 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					48C020782B833A2200129830 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 48C0205F2B833A2000129830;
+					};
+				};
+			};
+			buildConfigurationList = 48C0205B2B833A1F00129830 /* Build configuration list for PBXProject "PSPDFKit-Demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48C020572B833A1F00129830;
+			packageReferences = (
+				48C020872B833BE000129830 /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */,
+			);
+			productRefGroup = 48C020612B833A2000129830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48C0205F2B833A2000129830 /* PSPDFKit-Demo */,
+				48C020782B833A2200129830 /* PSPDFKit-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48C0205E2B833A2000129830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48CB78982B8BEDF900D7CA7D /* Best Practices for Sustainable Lunar Activities.pdf in Resources */,
+				48C020702B833A2100129830 /* Assets.xcassets in Resources */,
+				48CB78912B8BEDF900D7CA7D /* The Declaration of Legal Principles Governing the Activities of States in the Exploration and Uses of Outer Space.pdf in Resources */,
+				48CB78A12B8BEDF900D7CA7D /* Space Liability Convention.pdf in Resources */,
+				48CB788C2B8BEDF900D7CA7D /* Remote Sensing Principles.pdf in Resources */,
+				48CB788D2B8BEDF900D7CA7D /* Vancouver Recommendations on Space Mining.pdf in Resources */,
+				48CB78922B8BEDF900D7CA7D /* Working Group on Legal Aspects of Space Resource Activities - Status Overview.pdf in Resources */,
+				48CB78B62B8BF7D700D7CA7D /* Recommendations on national legislation.pdf in Resources */,
+				48CB78A02B8BEDF900D7CA7D /* U.S. Commercial Space Launch Competitiveness Act.pdf in Resources */,
+				48CB78AA2B8BF58400D7CA7D /* Application.pdf in Resources */,
+				489088A22B83DB1C0001DBE2 /* Recommended Framework and Key Elements for Peaceful and Sustainable Lunar Activities.pdf in Resources */,
+				489088A02B83DACF0001DBE2 /* Artemis Accords.pdf in Resources */,
+				48CB78972B8BEDF900D7CA7D /* Japanese Information to the Space Resources Working Group.pdf in Resources */,
+				489088A42B83EB780001DBE2 /* Moon Treaty.pdf in Resources */,
+				48CB78A32B8BEDF900D7CA7D /* Safety Framework for Nuclear Power Source Applications in Outer Space.pdf in Resources */,
+				48CB78A82B8BEDF900D7CA7D /* Principles Governing the Use by States of Artificial Earth Satellites for International Direct Television Broadcasting.pdf in Resources */,
+				48CB78B02B8BF69D00D7CA7D /* Declaration on International Cooperation.pdf in Resources */,
+				48CB78942B8BEDF900D7CA7D /* Regulatory Framework on Space Activities of the United Arab Emirates.pdf in Resources */,
+				48C020732B833A2100129830 /* Preview Assets.xcassets in Resources */,
+				48CB78AE2B8BF5D800D7CA7D /* Recommendations for organizations in registering space objects.pdf in Resources */,
+				48CB789A2B8BEDF900D7CA7D /* Building Blocks Outer Space.pdf in Resources */,
+				48CB78992B8BEDF900D7CA7D /* Registration Convention.pdf in Resources */,
+				48CB78932B8BEDF900D7CA7D /* Space Debris Mitigation Guidelines of the Committee on the Peaceful Uses of Outer Space.pdf in Resources */,
+				48CB78B42B8BF6B500D7CA7D /* Law Luxembourg Space Agency.pdf in Resources */,
+				48CB78AC2B8BF59000D7CA7D /* Federal Space.pdf in Resources */,
+				48CB789C2B8BEDF900D7CA7D /* Moon Agreement.pdf in Resources */,
+				48C0206E2B833A2000129830 /* ImageBasedLighting.skybox in Resources */,
+				48CB78BA2B8BF93500D7CA7D /* International co-operation in the peaceful uses of outer space.pdf in Resources */,
+				48CB78B22B8BF6AB00D7CA7D /* Guidelines for space activities.pdf in Resources */,
+				48CB78902B8BEDF900D7CA7D /* Outer Space Treaty.pdf in Resources */,
+				48CB789F2B8BEDF900D7CA7D /* Rescue Agreement.pdf in Resources */,
+				48CB78B82B8BF88900D7CA7D /* Principles Relevant to the Use of Nuclear Power Sources In Outer Space.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C020772B833A2200129830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48C0205C2B833A2000129830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4865286C2B8AE48B0012DD2C /* ElevatedMoon.swift in Sources */,
+				48EF92412B88847B00ED7C1D /* MoonExplorer.swift in Sources */,
+				482CB9342B8AB09700C9D4CF /* MoonControls.swift in Sources */,
+				482CB9322B89E25B00C9D4CF /* ListItemView.swift in Sources */,
+				481FDB6E2B87F763006B5F3A /* Moon.swift in Sources */,
+				48CB786E2B8BCB5D00D7CA7D /* CraterDetails.swift in Sources */,
+				48AA65A32B889118006C6718 /* Crater.swift in Sources */,
+				481FDB6C2B87DCDC006B5F3A /* Models.swift in Sources */,
+				48CB78BC2B8BFD7500D7CA7D /* MissionDetails.swift in Sources */,
+				480434462B84629C004D8A6A /* DragRotationModifier.swift in Sources */,
+				48C020682B833A2000129830 /* PSPDFKit_DemoApp.swift in Sources */,
+				480434482B84643C004D8A6A /* PlacementGesturesModifier.swift in Sources */,
+				48B9F1372B89BD0700920EEE /* MissionMoon.swift in Sources */,
+				4823666D2B85371A00ACE33B /* DocumentsWindow.swift in Sources */,
+				48CB786C2B8B12A700D7CA7D /* MineralMoon.swift in Sources */,
+				481FDB6A2B87DC7A006B5F3A /* ViewModel.swift in Sources */,
+				4804344B2B8477FF004D8A6A /* RotationSystem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C020752B833A2200129830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C0207E2B833A2200129830 /* PSPDFKit_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48C0207B2B833A2200129830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48C0205F2B833A2000129830 /* PSPDFKit-Demo */;
+			targetProxy = 48C0207A2B833A2200129830 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		48C0207F2B833A2200129830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		48C020802B833A2200129830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		48C020822B833A2200129830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PSPDFKit-Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9YBX7662B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.talbertherndon.PSPDFKit-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		48C020832B833A2200129830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PSPDFKit-Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9YBX7662B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.talbertherndon.PSPDFKit-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		48C020852B833A2200129830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9YBX7662B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.talbertherndon.PSPDFKit-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSPDFKit-Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PSPDFKit-Demo";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		48C020862B833A2200129830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y9YBX7662B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.talbertherndon.PSPDFKit-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PSPDFKit-Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PSPDFKit-Demo";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48C0205B2B833A1F00129830 /* Build configuration list for PBXProject "PSPDFKit-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C0207F2B833A2200129830 /* Debug */,
+				48C020802B833A2200129830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48C020812B833A2200129830 /* Build configuration list for PBXNativeTarget "PSPDFKit-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C020822B833A2200129830 /* Debug */,
+				48C020832B833A2200129830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48C020842B833A2200129830 /* Build configuration list for PBXNativeTarget "PSPDFKit-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48C020852B833A2200129830 /* Debug */,
+				48C020862B833A2200129830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48C020872B833BE000129830 /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PSPDFKit/PSPDFKit-SP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48C020652B833A2000129830 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+		48C020882B833BE000129830 /* PSPDFKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48C020872B833BE000129830 /* XCRemoteSwiftPackageReference "PSPDFKit-SP" */;
+			productName = PSPDFKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 48C020582B833A1F00129830 /* Project object */;
+}

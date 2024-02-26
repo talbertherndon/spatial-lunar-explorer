@@ -1,0 +1,128 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["The_Moon", "AudioMixGroups", "Transform", "Material", "Heaven_mp3"]
+    rel material:binding = None (
+        bindMaterialAs = "weakerThanDescendants"
+    )
+    float3 xformOp:scale = (0.5, 0.5, 0.5)
+    float3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+    def Xform "Transform" (
+        active = true
+    )
+    {
+    }
+
+    def Material "Material"
+    {
+        prepend token outputs:mtlx:surface.connect = </Root/Material/PreviewSurface.outputs:out>
+        token outputs:realitykit:vertex
+        string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["outputs:mtlx:surface", "outputs:mtlx:surface", "outputs:realitykit:vertex", "outputs:mtlx:surface", "outputs:mtlx:surface"]
+        float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (319.03906, 75.69531)
+        float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+        int ui:nodegraph:realitykit:subgraphOutputs:stackingOrder = 23
+
+        def Shader "Image"
+        {
+            uniform token info:id = "ND_image_vector4"
+            asset inputs:file = @lro-lola-top.PNG@
+            string inputs:filtertype
+            float2 inputs:texcoord
+            string inputs:uaddressmode
+            string inputs:vaddressmode
+            float4 outputs:out
+            float2 ui:nodegraph:node:pos = (-7.96875, 46.996094)
+            float2 ui:nodegraph:node:size = (148.5, 199)
+            int ui:nodegraph:node:stackingOrder = 23
+            string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["inputs:uaddressmode", "inputs:uaddressmode", "inputs:uaddressmode", "outputs:out"]
+        }
+
+        def Shader "UsdTransform2d"
+        {
+            uniform token info:id = "ND_UsdTransform2d"
+            float2 ui:nodegraph:node:pos = (179, 83.5)
+            float2 ui:nodegraph:node:size = (156.5, 163)
+            int ui:nodegraph:node:stackingOrder = 23
+        }
+    }
+
+    def "The_Moon" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @The_Moon.usdz@
+    )
+    {
+        reorder nameChildren = ["Heaven_mp3", "Materials", "Meshes", "InputTarget", "Collider"]
+        rel material:binding = None (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        float3 xformOp:scale = (0.01, 0.01, 0.01)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def RealityKitComponent "InputTarget"
+        {
+            uniform token info:id = "RealityKit.InputTarget"
+        }
+
+        def RealityKitComponent "Collider"
+        {
+            uint group = 1
+            uniform token info:id = "RealityKit.Collider"
+            uint mask = 4294967295
+            token type = "Default"
+
+            def RealityKitStruct "Shape"
+            {
+                float3 extent = (200, 199.99997, 199.99997)
+                float radius = 100
+                token shapeType = "Sphere"
+
+                def RealityKitStruct "pose"
+                {
+                }
+            }
+        }
+
+        over "Materials"
+        {
+        }
+    }
+
+    def RealityKitComponent "AudioMixGroups"
+    {
+        uniform token info:id = "RealityKit.AudioMixGroups"
+
+        def RealityKitAudioMixGroup "MixGroup"
+        {
+            float gain = 0
+            bool mute = 0
+            float speed = 1
+        }
+    }
+
+    def RealityKitAudioFile "Heaven_mp3"
+    {
+        uniform asset file = @Heaven.mp3@
+        uniform bool shouldLoop = 1
+        uniform bool shouldRandomizeStartTime = 0
+    }
+
+    def Xform "AmbientAudio"
+    {
+        def RealityKitComponent "AmbientAudio"
+        {
+            float gain = -20
+            uniform token info:id = "RealityKit.AmbientAudio"
+        }
+    }
+}
+
